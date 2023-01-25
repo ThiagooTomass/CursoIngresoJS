@@ -11,7 +11,7 @@ function Sumar ()
 
     let resultado=num1+num2+num3;
 
-    alert(resultado)
+    alert("La suma es: "+resultado)
 
 }
 function Promedio () 
@@ -22,7 +22,7 @@ function Promedio ()
 
     let resultado=(num1+num2+num3)/3;
 
-    alert(resultado)	
+    alert("El promedio es: "+resultado)	
 }
 function PrecioFinal () 
 {
@@ -32,5 +32,5 @@ function PrecioFinal ()
 
     let iva=((num1+num2+num3)*21/100);
     let resultado=iva+num1+num2+num3
-    alert(resultado)
+    alert("El precio final es: "+resultado)
 }
