@@ -10,6 +10,7 @@ function Sumar ()
     let num3=parseFloat(document.getElementById("txtIdPrecioTres").value);
 
     let resultado=num1+num2+num3;
+    resultado=resultado.toFixed(2);
 
     alert("La suma es: "+resultado)
 
@@ -21,6 +22,7 @@ function Promedio ()
     let num3=parseFloat(document.getElementById("txtIdPrecioTres").value);
 
     let resultado=(num1+num2+num3)/3;
+    resultado=resultado.toFixed(2);
 
     alert("El promedio es: "+resultado)	
 }
@@ -32,5 +34,7 @@ function PrecioFinal ()
 
     let iva=((num1+num2+num3)*21/100);
     let resultado=iva+num1+num2+num3
+    resultado=resultado.toFixed(2);
+    
     alert("El precio final es: "+resultado)
 }
