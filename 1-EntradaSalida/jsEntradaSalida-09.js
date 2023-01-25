@@ -6,5 +6,10 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	alert("ok");
+	let num1=parseFloat(document.getElementById("txtIdSueldo").value);
+	
+	let resultado=((num1*10/100)+num1);
+
+	document.getElementById("txtIdResultado").value=resultado;
+
 }
