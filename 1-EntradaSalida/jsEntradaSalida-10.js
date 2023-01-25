@@ -7,7 +7,7 @@ function mostrarAumento()
 {
 	let num1=parseFloat(document.getElementById("txtIdImporte").value);
 	
-	let resultado=(num1-(num1*20/100));
+	let resultado=(num1-(num1*25/100));
 
 	document.getElementById("txtIdResultado").value=resultado;
 }
