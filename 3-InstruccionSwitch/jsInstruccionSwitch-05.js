@@ -11,4 +11,4 @@ switch(hora){
 	default:alert("No es de mañana");
 }
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIoN
