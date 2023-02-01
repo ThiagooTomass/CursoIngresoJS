@@ -11,14 +11,14 @@ function Rectangulo ()
     let perimetro;
 
     largo=document.getElementById("txtIdLargo").value;
-    ancho=document.getElementById("txtIdAncho").value;
-
     largo=parseFloat(largo);
+    ancho=document.getElementById("txtIdAncho").value;
     ancho=parseFloat(ancho);
 
     perimetro=((ancho + largo)*2)*3;
 
     alert("Se necesitan comprar "+perimetro+" metros de alambre")
+
 }
 function Circulo () 
 {
@@ -38,12 +38,12 @@ function Materiales ()
     let area
 
 	largo=document.getElementById("txtIdLargo").value;
-    ancho=document.getElementById("txtIdAncho").value;
-
     largo=parseFloat(largo);
+    ancho=document.getElementById("txtIdAncho").value;
     ancho=parseFloat(ancho);
-        
-    area=largo*ancho;
 
+    area=largo*ancho;
+        
     alert("Para un contrapiso de "+area+"m2 se necesita comprar "+(area*2)+" bolsas de cemento y "+(area*3)+" bolsas de cal")
+
 }
