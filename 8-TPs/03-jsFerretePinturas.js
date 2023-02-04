@@ -9,8 +9,11 @@ function FahrenheitCentigrados ()
 	temp = document.getElementById("txtIdTemperatura").value;
 
     temp=parseFloat(temp);
+
     resultado=(temp-32)/1.8;
+
     resultado=resultado.toFixed(2);
+
     alert(temp+" grados Farhenheit equivalen a "+resultado+" grados centigrados");
 }
 
@@ -21,7 +24,10 @@ function CentigradosFahrenheit ()
 
 	temp = document.getElementById("txtIdTemperatura").value;
     temp=parseFloat(temp);
+
     resultado=(temp*1.8+32);
+
     resultado=resultado.toFixed(2);
+
     alert(temp+" grados Centigrados equivalen a "+resultado+" grados Farhenheit");
 }
