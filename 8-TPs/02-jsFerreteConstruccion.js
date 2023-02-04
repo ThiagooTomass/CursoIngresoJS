@@ -26,24 +26,27 @@ function Circulo ()
     let radio;
 
     radio = document.getElementById("txtIdRadio").value;
-    radio=parseFloat();
-    perimetro = 2 * 3.14 * radio * 3;
+    radio=parseFloat(radio);
+    perimetro =  (3.14 * radio *2)*3 ;
 
     alert("Se necesitan comprar "+perimetro+" metros de alambre");
 }
 function Materiales () 
 {
-    let largo
-    let ancho
-    let area
-
+    let largo;
+    let ancho;
+    let area;
+    let cemento;
+    let cal;
 	largo=document.getElementById("txtIdLargo").value;
     largo=parseFloat(largo);
     ancho=document.getElementById("txtIdAncho").value;
     ancho=parseFloat(ancho);
 
     area=largo*ancho;
-        
-    alert("Para un contrapiso de "+area+"m2 se necesita comprar "+(area*2)+" bolsas de cemento y "+(area*3)+" bolsas de cal")
+    cemento=area*2;
+    cal=area*3;
+
+    alert("Para un contrapiso de "+area+"m2 se necesita comprar "+(cemento)+" bolsas de cemento y "+(cal)+" bolsas de cal")
 
 }
