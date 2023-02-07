@@ -1,7 +1,8 @@
 function mostrar()
 {
-	
-	let edad=parseInt(document.getElementById("txtIdEdad").value);
+	let edad
+	edad=document.getElementById("txtIdEdad").value;
+	edad=parseInt(edad);
 	if(edad>17){
 alert("Ustes es adulto y tiene "+edad+" años")
 	}else{

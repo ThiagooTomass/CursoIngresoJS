@@ -34,5 +34,22 @@ function mostrar()
 
 		default:alert("No existe esa hora");
 	}
-	
+	/*
+	let hora=parseInt(document.getElementById("txtIdHora").value);
+	switch(hora>6 && hora<12){
+default:alert("Es de mañana");break;
+	}
+
+	switch(hora>11 && hora<20){
+		default:alert("Es de tarde");break;
+			}
+			
+			switch(hora>19 && hora<25 || hora>=0 && hora<7){
+				default:alert("Es de noche");break;
+					}
+
+					switch(hora>24){
+						default:alert("La hora no existe");break;
+							}
+							*/
 }//FIN DE LA FUNCIÓN
