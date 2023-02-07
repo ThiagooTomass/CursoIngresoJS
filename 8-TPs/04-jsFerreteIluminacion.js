@@ -26,11 +26,12 @@ function CalcularPrecio ()
         total=cantidad*35;
         descuento=total*50/100;
         precio_f=total-descuento;
-        document.getElementById("txtIdprecioDescuento").value=precio_f;
         if(precio_f>=120){
-        aumento=total*10/100;
-        total_aumentado=aumento+total;
-        alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+        aumento=precio_f*10/100;
+        total_aumentado=aumento+precio_f;
+        document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+        }else{
+        document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
         }
     }
 
@@ -39,22 +40,24 @@ function CalcularPrecio ()
         total=cantidad*35;
         descuento=total*40/100;
         precio_f=total-descuento;
-        document.getElementById("txtIdprecioDescuento").value=precio_f;
         if(precio_f>=120){
-            aumento=total*10/100;
-            total_aumentado=aumento+total;
-            alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+            aumento=precio_f*10/100;
+            total_aumentado=aumento+precio_f;
+            document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+            }else{
+            document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
             }
             }else{
                 if(cantidad==5 && marca!="ArgentinaLuz"){
                 total=cantidad*35;
                 descuento=total*30/100;
                 precio_f=total-descuento;
-                document.getElementById("txtIdprecioDescuento").value=precio_f;
                 if(precio_f>=120){
-                    aumento=total*10/100;
-                    total_aumentado=aumento+total;
-                    alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+                    aumento=precio_f*10/100;
+                    total_aumentado=aumento+precio_f;
+                    document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+                    }else{
+                    document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
                     }
                 }
             }
@@ -63,22 +66,24 @@ function CalcularPrecio ()
                     total=cantidad*35;
                     descuento=total*25/100;
                     precio_f=total-descuento;
-                    document.getElementById("txtIdprecioDescuento").value=precio_f;
                     if(precio_f>=120){
-                        aumento=total*10/100;
-                        total_aumentado=aumento+total;
-                        alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+                        aumento=precio_f*10/100;
+                        total_aumentado=aumento+precio_f;
+                        document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+                        }else{
+                        document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
                         }
                         }else{
                             if(cantidad==4 && marca!="ArgentinaLuz"||cantidad==4 && marca!="FelipeLamparas"){
                             total=cantidad*35;
                             descuento=total*20/100;
                             precio_f=total-descuento;
-                            document.getElementById("txtIdprecioDescuento").value=precio_f;
                             if(precio_f>=120){
-                                aumento=total*10/100;
-                                total_aumentado=aumento+total;
-                                alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+                                aumento=precio_f*10/100;
+                                total_aumentado=aumento+precio_f;
+                                document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+                                }else{
+                                document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
                                 }
                             }       
                         }
@@ -87,33 +92,36 @@ function CalcularPrecio ()
                                     total=cantidad*35;
                                     descuento=total*15/100;
                                     precio_f=total-descuento;
-                                    document.getElementById("txtIdprecioDescuento").value=precio_f;
                                     if(precio_f>=120){
-                                        aumento=total*10/100;
-                                        total_aumentado=aumento+total;
-                                        alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+                                        aumento=precio_f*10/100;
+                                        total_aumentado=aumento+precio_f;
+                                        document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+                                        }else{
+                                        document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
                                         }
                                     }else{
                                         if(cantidad==3 && marca=="FelipeLamparas"){
                                             total=cantidad*35;
                                             descuento=total*10/100;
                                             precio_f=total-descuento;
-                                            document.getElementById("txtIdprecioDescuento").value=precio_f;
                                             if(precio_f>=120){
-                                                aumento=total*10/100;
-                                                total_aumentado=aumento+total;
-                                                alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+                                                aumento=precio_f*10/100;
+                                                total_aumentado=aumento+precio_f;
+                                                document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+                                                }else{
+                                                document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
                                                 }
                                         }else{
                                             if(cantidad==3 && marca!="ArgentinaLuz"||cantidad==3 && marca!="FelipeLamparas"){
                                                 total=cantidad*35;
                                                 descuento=total*5/100;
                                                 precio_f=total-descuento;
-                                                document.getElementById("txtIdprecioDescuento").value=precio_f;
                                                 if(precio_f>=120){
-                                                    aumento=total*10/100;
-                                                    total_aumentado=aumento+total;
-                                                    alert("Usted pago "+aumento+" de IIBB, siendo "+total_aumentado+" el total")
+                                                    aumento=precio_f*10/100;
+                                                    total_aumentado=aumento+precio_f;
+                                                    document.getElementById("txtIdprecioDescuento").value="Usted pago "+total_aumentado+" de IIBB, siendo "+aumento+" el total";
+                                                    }else{
+                                                    document.getElementById("txtIdprecioDescuento").value="Usted pago "+precio_f;
                                                     }
                                             }
                                         }
