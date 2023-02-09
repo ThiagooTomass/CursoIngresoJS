@@ -10,9 +10,17 @@ function mostrar()
 	contador=0;
 	acumulador=0;
 	respuesta='si';
+while(respuesta=="si"){
+num=prompt("Ingrese un numero");
+num=parseInt(num);
+respuesta=prompt("Desea ingresar numeros? ");
+acumulador=acumulador+num;
+contador++;
+}
+promedio=acumulador/contador;
+promedio=promedio.toFixed(2);
+	document.getElementById("txtIdSuma").value=acumulador;
+	document.getElementById("txtIdPromedio").value=promedio;
 
-
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN

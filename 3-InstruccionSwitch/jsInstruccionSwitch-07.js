@@ -1,16 +1,23 @@
 function mostrar()
 {
-	var destino =txtIdDestino.value;
+
+	let destino=document.getElementById("txtIdDestino").value;
 
 	switch(destino){
 		case "Bariloche":
-			alert("Oeste");break;
+			alert("Oeste");
+			break;
+
 		case "Cataratas":
-			alert("Este");break;
+			alert("Este");
+			break;
+
 		case "Mar del plata":
-			alert("Norte");break;
+			alert("Norte");
+			break;
+
 		case "Ushuaia":
-			alert("sur");break;
+			alert("sur");
 	}
 
 }//FIN DE LA FUNCIÓN

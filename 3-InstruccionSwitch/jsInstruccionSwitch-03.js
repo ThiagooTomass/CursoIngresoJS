@@ -1,7 +1,7 @@
 function mostrar()
 {
 	//tomo el mes
-	var mes =txtIdMes.value;
+	let mes=document.getElementById("txtIdMes").value;
 	switch(mes){
 		case "Febrero":
 			alert("Este mes no tiene más de 29 días.");break;
