@@ -12,18 +12,67 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {
-	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+ 
+	let respuesta;
+	let num;
+	let sumaPositivos;
+	let sumaNegativos;
+	let contadorNegativo;
+	let contadorPositivo;
+	let pares;
+	let contadoresPares;
+	let promedioPositivos;
+	let promedioNegativos;
+	let diferencia;
+	num=0;
+	sumaPositivos=0;
+	contadorPositivo=0;
+	promedioPositivos=0;
+	sumaNegativos=0;
+	contadorNegativo=0;
+	promedioNegativos=0;
+	diferencia=0;
+	pares=0;
+	contadoresPares=0;
+
 
 	respuesta="si";
 
 	while(respuesta=="si")
 	{
-		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		num=prompt("Ingrese un numero");
+		num=parseInt(num);
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+		if(num>=0){
+			//2)
+			sumaPositivos=sumaPositivos+num;
+			//3)
+			contadorPositivo++;
+			
+		}else{
+			//1)
+			sumaNegativos=(sumaNegativos+num);
+			//4)
+			contadorNegativo++;
+			
+		}
+		//6)
+		pares=num%2;
+		if(pares==0){
+			contadoresPares++;
+		}
+		respuesta=prompt("desea continuar?");
+	}
+
+/*1*/ 	alert(sumaNegativos);
+/*2*/	alert(sumaPositivos);
+/*3*/	alert(contadorPositivo);
+/*4*/	alert(contadorNegativo);
+/*6*/	alert(contadoresPares);
+/*7*/	promedioPositivos=sumaPositivos/contadorPositivo;
+			alert(promedioPositivos);
+/*8*/	promedioNegativos=sumaNegativos/contadorNegativo;
+			alert(promedioNegativos);
+/*9*/	diferencia=promedioPositivos-promedioNegativos;
+			alert(diferencia);
 }//FIN DE LA FUNCIÓN

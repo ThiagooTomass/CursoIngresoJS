@@ -4,10 +4,10 @@ function mostrar()
 	numero = Math.round(Math.random()*(10-1)+1);
 
 	if(numero==9 || numero==10){
-alert("EXCELENTE, "+numero)
+		alert("EXCELENTE, "+numero)
 	}else{
 		if(numero>=4 && numero<=8){
-alert("APROBO, "+numero)
+			alert("APROBO, "+numero)
 		}else{
 			alert("Vamos, la proxima se puede, "+numero)
 		}
