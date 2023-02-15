@@ -10,9 +10,8 @@ hasta que el usuario quiera, mostrar:
 7-Promedio de positivos.
 8-Promedios de negativos.
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
-function mostrar()
-{
- 
+function mostrar() {
+
 	let respuesta;
 	let num;
 	let sumaPositivos;
@@ -24,44 +23,43 @@ function mostrar()
 	let promedioPositivos;
 	let promedioNegativos;
 	let diferencia;
-	num=0;
-	sumaPositivos=0;
-	contadorPositivo=0;
-	promedioPositivos=0;
-	sumaNegativos=0;
-	contadorNegativo=0;
-	promedioNegativos=0;
-	diferencia=0;
-	pares=0;
-	contadoresPares=0;
+	num = 0;
+	sumaPositivos = 0;
+	contadorPositivo = 0;
+	promedioPositivos = 0;
+	sumaNegativos = 0;
+	contadorNegativo = 0;
+	promedioNegativos = 0;
+	diferencia = 0;
+	pares = 0;
+	contadoresPares = 0;
 
 
-	respuesta="si";
+	respuesta = "si";
 
-	while(respuesta=="si")
-	{
-		num=prompt("Ingrese un numero");
-		num=parseInt(num);
+	while (respuesta == "si") {
+		num = prompt("Ingrese un numero");
+		num = parseInt(num);
 
-		if(num>=0){
+		if (num >= 0) {
 			//2)
-			sumaPositivos=sumaPositivos+num;
+			sumaPositivos = sumaPositivos + num;
 			//3)
 			contadorPositivo++;
-			
-		}else{
+
+		} else {
 			//1)
-			sumaNegativos=(sumaNegativos+num);
+			sumaNegativos = (sumaNegativos + num);
 			//4)
 			contadorNegativo++;
-			
+
 		}
 		//6)
-		pares=num%2;
-		if(pares==0){
+		pares = num % 2;
+		if (pares == 0) {
 			contadoresPares++;
 		}
-		respuesta=prompt("desea continuar?");
+		respuesta = prompt("desea continuar?");
 	}
 
 /*1*/ 	alert(sumaNegativos);
@@ -69,10 +67,10 @@ function mostrar()
 /*3*/	alert(contadorPositivo);
 /*4*/	alert(contadorNegativo);
 /*6*/	alert(contadoresPares);
-/*7*/	promedioPositivos=sumaPositivos/contadorPositivo;
-			alert(promedioPositivos);
-/*8*/	promedioNegativos=sumaNegativos/contadorNegativo;
-			alert(promedioNegativos);
-/*9*/	diferencia=promedioPositivos-promedioNegativos;
-			alert(diferencia);
+/*7*/	promedioPositivos = sumaPositivos / contadorPositivo;
+	alert(promedioPositivos);
+/*8*/	promedioNegativos = sumaNegativos / contadorNegativo;
+	alert(promedioNegativos);
+/*9*/	diferencia = promedioPositivos - promedioNegativos;
+	alert(diferencia);
 }//FIN DE LA FUNCIÓN
