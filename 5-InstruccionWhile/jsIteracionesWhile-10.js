@@ -23,6 +23,8 @@ function mostrar() {
 	let promedioPositivos;
 	let promedioNegativos;
 	let diferencia;
+	let contadorCeros;
+
 	num = 0;
 	sumaPositivos = 0;
 	contadorPositivo = 0;
@@ -33,6 +35,7 @@ function mostrar() {
 	diferencia = 0;
 	pares = 0;
 	contadoresPares = 0;
+	contadorCeros = 0;
 
 
 	respuesta = "si";
@@ -52,7 +55,10 @@ function mostrar() {
 			sumaNegativos = (sumaNegativos + num);
 			//4)
 			contadorNegativo++;
-
+		}
+		if (num == 0) {
+			//5)
+			contadorCeros++;
 		}
 		//6)
 		pares = num % 2;
@@ -66,6 +72,7 @@ function mostrar() {
 /*2*/	alert(sumaPositivos);
 /*3*/	alert(contadorPositivo);
 /*4*/	alert(contadorNegativo);
+/*5*/	alert(contadorCeros);
 /*6*/	alert(contadoresPares);
 /*7*/	promedioPositivos = sumaPositivos / contadorPositivo;
 	alert(promedioPositivos);
