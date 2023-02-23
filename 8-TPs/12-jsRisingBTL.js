@@ -12,15 +12,15 @@ function ComenzarIngreso() {
 	let edadIngresada;
 	let sexoIngresado;
 	let estadoCivilIngresado;
+	let estadoCivil;
 	let sueldoBruto;
 	let numeroLegajo;
 	let nacionalidad;
 
-	nacionalidad = "b";
+	estadoCivilIngresado = 0;
 	numeroLegajo = 0;
 	sueldoBruto = 0;
 	edadIngresada = 0;
-	sexoIngresado = "A";
 
 	//A)
 
@@ -44,11 +44,28 @@ function ComenzarIngreso() {
 
 	//C)
 
-	while (estadoCivilIngresado != 1 && estadoCivilIngresado != 2 && estadoCivilIngresado != 3 && estadoCivilIngresado != 4) {
-		estadoCivilIngresado = prompt("Ingrese estado civil (1: soltero. 2: casado. 3: divorciado. 4: viudo)")
+	while (!(estadoCivilIngresado == 1 && estadoCivilIngresado == 2 && estadoCivilIngresado == 3 && estadoCivilIngresado == 4)) {
+		estadoCivilIngresado = prompt("ingrese su estado civil: \n 1-soltero \n 2-casado \n 3-divorciado \n 4-viudo");
 		estadoCivilIngresado = parseInt(estadoCivilIngresado);
+		switch (estadoCivilIngresado) {
+			case 1:
+				estadoCivilIngresado = "soltero";
+				break;
+
+			case 2:
+				estadoCivilIngresado = "casado";
+				break;
+
+			case 3:
+				estadoCivilIngresado = "divorciado";
+				break;
+
+			case 4:
+				estadoCivilIngresado = "viudo";
+				break;
+		}
 	}
-	document.getElementById("txtIdEstadoCivil").value = "Estado civil: " + estadoCivilIngresado
+	document.getElementById("txtIdEstadoCivil").value = "Estado civil: " + estadoCivil
 
 	//--------------------------->
 
@@ -74,6 +91,14 @@ function ComenzarIngreso() {
 
 	//F)
 	while (nacionalidad != "A" && nacionalidad != "E" && nacionalidad != "N") {
+		switch (nacionalidad) {
+			case "A": nacionalidad = "argentino";
+				break;
+			case "E": nacionalidad = "extranjero";
+				break;
+			case "N": nacionalidad = "naconalizados";
+
+		}
 		nacionalidad = prompt("Ingrese nacionalidad: (A:argentino. E:extranjeros. N:nacionalizados)");
 		nacionalidad = nacionalidad.toUpperCase();
 	}

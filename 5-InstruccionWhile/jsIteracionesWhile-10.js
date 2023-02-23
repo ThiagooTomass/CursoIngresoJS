@@ -74,10 +74,14 @@ function mostrar() {
 /*4*/	alert(contadorNegativo);
 /*5*/	alert(contadorCeros);
 /*6*/	alert(contadoresPares);
-/*7*/	promedioPositivos = sumaPositivos / contadorPositivo;
-	alert(promedioPositivos);
-/*8*/	promedioNegativos = sumaNegativos / contadorNegativo;
-	alert(promedioNegativos);
+/*7*/	if (contadorPositivo > 0) {
+		promedioPositivos = sumaPositivos / contadorPositivo;
+		alert(promedioPositivos);
+	}
+/*8*/	if (contadorNegativo > 0) {
+		promedioNegativos = sumaNegativos / contadorNegativo;
+		alert(promedioNegativos);
+	}
 /*9*/	diferencia = promedioPositivos - promedioNegativos;
 	alert(diferencia);
 }//FIN DE LA FUNCIÓN
